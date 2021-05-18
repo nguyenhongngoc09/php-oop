@@ -6,4 +6,7 @@ require_once 'includes/config.php';
 require_once 'includes/Databases.php';
 
 $object = new Database();
-echo $object->connect();
+
+echo $object->connect('PDO');
+echo '<br>';
+echo $object->connect('mysqli');

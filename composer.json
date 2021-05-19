@@ -1,0 +1,13 @@
+{
+    "name": "root/html",
+    "description": "php mvc vn",
+    "authors": [
+        {
+            "name": "ngocnh",
+            "email": "nguyenhongngoc09@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.48"
+    }
+}

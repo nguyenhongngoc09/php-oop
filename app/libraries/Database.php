@@ -94,7 +94,8 @@ class Database
      */
     public function rowCount()
     {
-        $this->statement->rowCount();
+        $this->execute();
+        return $this->statement->rowCount();
     }
 
 }

@@ -62,16 +62,15 @@ class UsersController extends Controller
                     $this->createUserSession($loggedInUser);
                 } else {
                     $data['passwordError'] = 'Username or Password is incorrect.';
-                    $this->view('users/login', $data);
                 }
             }
         } else {
             if (isLoggedIn()) {
                 header('location:'.URL_ROOT . '/pages');
             }
-
-            $this->view('users/login', $data);
         }
+
+        $this->view('users/login', $data);
     }
 
     /**

@@ -10,4 +10,5 @@ define('DB_NAME', 'test');
 define('APP_ROOT', dirname(dirname(__FILE__)));
 
 // URL root link
-define('URL_ROOT', 'https://test.local/');
+define('URL_ROOT', 'https://test.local');
+define('SITE_NAME', 'MVC Framework');

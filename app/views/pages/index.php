@@ -1,18 +1,10 @@
-<?php
-$titlePage = $data['title'];
-$users = $data['users'] ?? [];
-?>
+<?php require APP_ROOT.'/views/includes/head.php'; ?>
 
-<div>
-    <h1><?= $titlePage ?></h1>
+<div id="section-landing">
+    <?php require APP_ROOT . '/views/includes/navigation.php'; ?>
 
-    <?php if (count($users) > 0) :?>
-        <ul>
-            <?php foreach ($users as $user) : ?>
-                <li> User: <?= $user->user_name ?> --- Email: <?= $user->user_email ?> </li>
-            <?php endforeach; ?>
-        </ul>
-    <?php else : ?>
-        <div>No user found</div>
-    <?php endif?>
+    <div class="wrapper-landing">
+        <h1>Lorem Ipsum</h1>
+        <h2>Neque porro quisquam est qui dolorem</h2>
+    </div>
 </div>

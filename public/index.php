@@ -5,5 +5,5 @@ spl_autoload_register(function($class) {
 });
 
 // run
-$object = new TotalNumbersHasEvenNumberCharacters();
+$object = new BinarySearch();
 $object->execute();
